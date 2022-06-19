@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.carte_button:hover + .carte {
+    border-top: none;
+    top:8px;
+    left:12px;
+    height: 250px;
+    width:90%;
+    padding: 15px;
+}
+
+.carte_button:hover + .carte div {
+    display: block;
+}
+
+.carte_button:hover + .carte a {
+    display: block;
+}
+
+.carte:hover div {
+    display: block;
+}
+.carte:hover a {
+    display: block;
+}
+.carte {
+    height: 0%;
+    transition: height 500ms;
+}
+
+.carte div {
+    display: none;
+}
+
+.carte a {
+    display: none;
+}
+
+.carte:hover {
+    top:8px;
+    left:12px;
+    height: 250px;
+    width:90%;
+    padding: 15px;
+}
