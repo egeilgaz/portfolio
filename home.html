@@ -10,15 +10,35 @@
 </head>
 <body class="bg-[#fff] relative">
     <!-- header -->
-    <header class="w-full h-24 relative px-[3%] py-5 z-20">
-        <div class="flex relative z-10 justify-between px-5 lg:hidden">
-            <div class="font-bold mt-3">
+    <header id="header" class="w-full h-24 relative px-[3%] py-5 z-20">
+        <div id="logo" class="flex relative z-10 justify-between px-5 lg:hidden">
+            <div  class="font-bold mt-3">
                 My Amazing Logo :)
             </div>
-            <div class="z-10 border border-[#34a1cd] cursor-pointer bg-white rounded-lg p-3">
+            <div class="hamburger border border-[#34a1cd] cursor-pointer bg-white rounded-lg p-3">
                 <img class="w-6" src="./assets/icons/hamburger-menu.svg" alt="hamburger-menu">
             </div>
+            <!-- <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button> -->
         </div>
+        <!-- <div id="hamburgerMenu" class="bg-blue-100 hidden relative w-full z-50 flex flex-col px-10">
+            <a class="text-[#130f49] py-5 font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#about">About</a>
+            <a class="text-[#130f49] py-5 font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#works">Works</a>
+            <a class="text-[#130f49] py-5 font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#technologies">Technologies</a>
+            <a class="text-[#130f49] py-5 font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#contact">Contact</a>
+        </div> -->
+        <ul id="list" class="menu px-10 lg:hidden">
+            <li class="py-5"><a class="text-[#130f49] font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#about">About</a>
+            </li>
+            <li class="py-5"><a class="text-[#130f49] font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#works">Works</a>
+            </li>
+            <li class="py-5"><a class="text-[#130f49] font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#technologies">Technologies</a>
+            </li>
+            <li class="py-5"><a class="text-[#130f49] font-bold text-lg transition duration-200 ease-out hover:text-[#34a1cd] hover:ease-in" href="#contact">Contact</a>
+            </li>
+          </ul>
         <div class="my-3 hidden justify-between lg:mx-20 lg:flex xl:mx-52">
             <div class="font-bold">
                 My Amazing Logo :)
@@ -49,13 +69,13 @@
     <!-- explain -->
     <section id="about" class="mt-16 px-[3%] grid lg:grid-cols-2 xl:mx-52 xl:px-[2%]">
         <div class="pl-5 md:mx-8 lg:mx-4 xl:mt-10">
-            <div class="text-[#130f49] font-bold text-5xl relative z-30 md:ml-10 md:text-6xl lg:text-7xl xl:ml-10">Hey, I'm a 
+            <div id="aboutText" class="text-[#130f49] font-bold text-5xl relative z-20 md:ml-10 md:text-6xl lg:text-7xl xl:ml-10">Hey, I'm a 
                 <div class="text-[#34a1cd]">
                 FrontEnd
             </div> Developer.</div>
             <div class="mt-12 text-gray-500 text-lg max-w-[400px] md:max-w-[450px] md:ml-10 md:text-xl lg:max-w-[450px] xl:ml-10">Hi, I'm Ege a freelance FrontEnd developer from Turkey. I help brands turn their ideas into high quality products.</div>
         </div>
-        <div class="mx-5 mt-10 relative z-30 rounded-l-full rounded-b-full md:mx-16 lg:mx-10 bg-[#d9f4ff] lg:min-w-[400px] xl:min-w-[500px] xl:min-h-[500px]">
+        <div id="photo" class="mx-5 mt-10 relative z-20 rounded-l-full rounded-b-full md:mx-16 lg:mx-10 bg-[#d9f4ff] lg:min-w-[400px] xl:min-w-[500px] xl:min-h-[500px]">
             <div class="absolute top-2 left-0">
                 <img src="./assets/bg-images/dots.svg" alt="dots">
             </div>
@@ -128,7 +148,7 @@
     <!-- portfolio -->
     <section id="works" class="mt-16 md:mt-40">
         <div class="relative">
-            <div class="flex flex-col items-center relative z-20 md:mx-10">
+            <div id="portfolio" class="flex flex-col items-center relative z-20 md:mx-10">
                 <div class="text-gray-400 text-lg mt-5 font-semibold ">
                     PORTFOLIO
                 </div>
@@ -136,52 +156,65 @@
                 <div class="grid mt-5 gap-3 md:grid-cols-2 xl:grid-cols-3 xl:mt-10">
                     <div class="relative mx-auto">
                         <div class="carte_button rounded-lg">
-                            <img class="w-full h-44 rounded-lg z-20 h-[270px] max-w-[270px] md:h-[350px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px]" src="./assets/bg-images/makco.png" alt="">
+                            <img class="w-full h-44 rounded-lg z-20 h-[210px] max-w-[330px] md:h-[270px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px]" src="./assets/bg-images/makco.png" alt="">
                         </div>
-                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-10">
-                            <div class="text-white text-lg text-center font-semibold mt-10">
+                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-5">
+                            <div class="text-white text-lg text-center font-semibold mt-5">
                                 Makco (Food Web Site)
                             </div>
-                            <a href="https://www.apkdeposu.com/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-2 py-4 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
+                            <a href="https://www.apkdeposu.com/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-1 py-2 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
                                 See on Website
                             </a> 
                         </div>
                     </div>
                     <div class="relative mx-auto">
                         <div class="carte_button rounded-lg">
-                            <img class="w-full h-44 rounded-lg z-20 h-[270px] max-w-[270px] md:h-[350px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px] " src="./assets/bg-images/makco.png" alt="">
+                            <img class="w-full h-44 rounded-lg z-20 h-[210px] max-w-[330px] md:h-[270px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px]" src="./assets/bg-images/edusiscoApp.png" alt="">
                         </div>
-                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-10">
-                            <div class="text-white text-lg text-center font-semibold mt-10">
-                                Makco (Food Web Site)
+                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-5">
+                            <div class="text-white text-lg text-center font-semibold mt-5">
+                                EdusiscoNext (Educational Web App)
                             </div>
-                            <a href="https://www.apkdeposu.com/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-2 py-4 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
+                            <a href="https://www.edusisco.net/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-1 py-2 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
                                 See on Website
                             </a> 
                         </div>
                     </div>
                     <div class="relative mx-auto">
                         <div class="carte_button rounded-lg">
-                            <img class="w-full h-44 rounded-lg z-20 h-[270px] max-w-[270px] md:h-[350px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px] " src="./assets/bg-images/makco.png" alt="">
+                            <img class="w-full h-44 rounded-lg z-20 h-[210px] max-w-[330px] md:h-[270px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px]" src="./assets/bg-images/portfolio.png" alt="">
                         </div>
-                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-10">
-                            <div class="text-white text-lg text-center font-semibold mt-10">
-                                Makco (Food Web Site)
+                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-5">
+                            <div class="text-white text-lg text-center font-semibold mt-5">
+                                Portfolio
                             </div>
-                            <a href="https://www.apkdeposu.com/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-2 py-4 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
+                            <a href="https://mellifluous-snickerdoodle-3811e3.netlify.app/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-1 py-2 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
                                 See on Website
                             </a> 
                         </div>
                     </div>
                     <div class="relative mx-auto">
                         <div class="carte_button rounded-lg">
-                            <img class="w-full h-44 rounded-lg z-20 h-[270px] max-w-[270px] md:h-[350px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px] " src="./assets/bg-images/makco.png" alt="">
+                            <img class="w-full h-44 rounded-lg z-20 h-[210px] max-w-[330px] md:h-[270px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px]" src="./assets/bg-images/movieList.png" alt="">
                         </div>
-                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-10">
-                            <div class="text-white text-lg text-center font-semibold mt-10">
-                                Makco (Food Web Site)
+                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-5">
+                            <div class="text-white text-lg text-center font-semibold mt-5">
+                                Movie List (Movie Web Site)
                             </div>
-                            <a href="https://www.apkdeposu.com/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-2 py-4 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
+                            <a href="https://kind-stonebraker-f7ed30.netlify.app/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-1 py-2 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
+                                See on Website
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="relative mx-auto">
+                        <div class="carte_button rounded-lg">
+                            <img class="w-full h-44 rounded-lg z-20 h-[210px] max-w-[330px] md:h-[270px] md:min-w-[340px] lg:min-w-[400px] xl:min-w-[360px]" src="./assets/bg-images/akillitestler.png" alt="">
+                        </div>
+                        <div class="carte absolute bg-[#55527ce6] z-20 rounded-xl md:mt-5">
+                            <div class="text-white text-lg text-center font-semibold mt-5">
+                                AkilliTestler (Educational Web App)
+                            </div>
+                            <a href="https://www.akillitestler.com/" target="_blank" class="mt-10 mx-auto w-52 text-lg font-bold border-2 border-red-400  rounded-lg px-1 py-2 text-center text-red-400 transition duration-300 ease-out hover:text-red-500 hover:border-red-500">
                                 See on Website
                             </a> 
                         </div>
@@ -196,15 +229,15 @@
     <!-- techs -->
     <section id="technologies" class="mt-16 md:mt-40">
         <div class="relative">
-            <div class="flex flex-col items-center relative z-20 md:mx-10">
+            <div id="techs" class="flex flex-col items-center relative z-20 md:mx-10">
                 <div class="text-[#130f49] mt-5 text-4xl font-bold relative md:text-6xl">
                     Technologies
                 </div>
                 <div class="text-gray-500 mx-5 text-lg font-semibold mt-10 xl:text-xl">
                     I have been 3 years since I worked in this industry. I have been in many large-scale and small-scale projects and I used diffrent technologies in these projects.
                 </div>
-                <div class="z-20 flex flex-wrap justify-center mt-10">
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                <div id="techs2" class="z-20 flex flex-wrap justify-center mt-10">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/html5.svg" alt="html5">
                         </div>
@@ -212,7 +245,7 @@
                             HTML5
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/css3.svg" alt="css3">
                         </div>
@@ -220,7 +253,7 @@
                             CSS3
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/bootstrap.svg" alt="js">
                         </div>
@@ -228,7 +261,7 @@
                             BOOTSTRAP
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/tailwindcss.svg" alt="tailwind">
                         </div>
@@ -236,7 +269,7 @@
                             TAILWINDCSS
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/javascript.svg" alt="js">
                         </div>
@@ -244,7 +277,7 @@
                             JS
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/vue.svg" alt="vuejs">
                         </div>
@@ -252,7 +285,7 @@
                             VUEJS
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/vue.svg" alt="vuex">
                         </div>
@@ -260,7 +293,7 @@
                             VUEX
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/php.svg" alt="php">
                         </div>
@@ -268,7 +301,7 @@
                             PHP
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/postgresql.svg" alt="postgresql">
                         </div>
@@ -276,7 +309,7 @@
                             POSTGRESQL
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/github2.svg" alt="github">
                         </div>
@@ -284,7 +317,7 @@
                             GITHUB
                         </div>
                     </div>
-                    <div class="z-20 rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
+                    <div class="rounded-xl h-[180px] w-36 md:w-52 mx-2 mt-3 hover:border-2 hover:border-red-400 bg-white w-full flex flex-col items-center shadow-xl transition duration-300 ease-out">
                         <div class="mt-7">
                             <img class="w-16 h-16" src="./assets/icons/netlify.svg" alt="netlify">
                         </div>
@@ -333,17 +366,52 @@
     <script>
         var mybutton = document.getElementById("myBtn")
         window.onscroll = function() {scrollFunction()}
+        var isMenuOpen = false
 
         function scrollFunction() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) mybutton.classList.remove("hidden");
-        else mybutton.classList.add("hidden")
-        
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) mybutton.classList.remove("hidden");
+            else mybutton.classList.add("hidden")
         }
 
         function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
+
+
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menuItem");
+        const hamburger= document.querySelector(".hamburger");
+        const closeIcon= document.querySelector(".closeIcon");
+        const menuIcon = document.querySelector(".menuIcon");
+        var logo = document.getElementById("logo")
+        var aboutText = document.getElementById("aboutText")
+        var photo = document.getElementById("photo")
+        var portfolio = document.getElementById("portfolio")
+        var techs = document.getElementById("techs")
+        var techs2 = document.getElementById("techs2")
+
+        function toggleMenu() {
+            if (menu.classList.contains("showMenu")) {
+                menu.classList.remove("showMenu");
+                logo.classList.add("z-10");
+                aboutText.classList.add("z-20");
+                photo.classList.add("z-20");
+                portfolio.classList.add("z-20");
+                techs.classList.add("z-20");
+                techs2.classList.add("z-20");
+            } else {
+                menu.classList.add("showMenu");
+                logo.classList.remove("z-10");
+                aboutText.classList.remove("z-20");
+                photo.classList.remove("z-20");
+                portfolio.classList.add("z-10");
+                techs.classList.add("z-10");
+                techs2.classList.add("z-10");
+            }
+        }
+        hamburger.addEventListener("click", toggleMenu);
+        list.addEventListener("click", toggleMenu)
     </script>
 
 

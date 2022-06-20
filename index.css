@@ -1,24 +1,20 @@
 html {
     scroll-behavior: smooth;
-  }
-
+}
 .carte_button:hover + .carte {
     border-top: none;
-    top:8px;
-    left:12px;
-    height: 250px;
+    top:10px;
+    left:18px;
+    height: 190px;
     width:90%;
     padding: 15px;
 }
-
 .carte_button:hover + .carte div {
     display: block;
 }
-
 .carte_button:hover + .carte a {
     display: block;
 }
-
 .carte:hover div {
     display: block;
 }
@@ -29,19 +25,42 @@ html {
     height: 0%;
     transition: height 500ms;
 }
-
 .carte div {
     display: none;
 }
-
 .carte a {
     display: none;
 }
-
 .carte:hover {
-    top:8px;
-    left:12px;
-    height: 250px;
+    top:10px;
+    left:18px;
+    height: 190px;
     width:90%;
     padding: 15px;
 }
+.hamburger {
+    position: fixed;
+    z-index: 9;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    cursor: pointer;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #e9f9ff;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    height: 500px;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
